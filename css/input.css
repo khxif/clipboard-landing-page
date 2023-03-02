@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{ scroll-behavior: smooth }
+html,body{
+     overflow-x: hidden;
+     max-width: 100%;
+    }
+header{
+    background-image: url('../images/bg-header-desktop.png');
+    background-size: cover;
+}
+.shadow{
+    box-shadow: 1px 1px 10px hsl(171, 66%, 44%);
+}
+@media (min-width<1100px){
+    header{
+        background-image: url('../images/bg-header-mobile.png');
+        background-size: cover;
+        width: 100%;
+    }
+}
